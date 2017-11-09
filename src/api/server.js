@@ -19,7 +19,7 @@ api.use(bodyParser.urlencoded({ extended: true }));
 
 api.use(requestLogger);
 
-api.use('/dist', Express.static('D:\\Portables\\NodeJs\\workspace\\express-react-redux\\dist'))
+api.use('/dist', Express.static(path.dirname(process.argv[1])));
 
 const renderFullPage = (html, preloadedState) => `
     <!doctype html>
