@@ -19,7 +19,7 @@
     "start": "webpack && node ./dist/server"
   },
   "author": "Stefano Butera <stefano.butera@nethnic.com> (https://github.com/lud77)",
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
