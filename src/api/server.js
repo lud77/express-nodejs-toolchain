@@ -1,25 +1,25 @@
-const Express = require('express');
+const express = require('express');
 const React = require('react');
 const { createStore } = require('redux');
 const { renderToString } = require('react-dom/server');
 const path = require('path');
 const bodyParser = require('body-parser');
-const Helmet = require('helmet');
+const helmet = require('helmet');
 
 const { logger, requestLogger, errorLogger } = require('./logger');
 
 const App = require('../components/App.jsx');
 const reducers = require('../reducers');
 
-const api = Express();
+const api = express();
 
-api.use(Helmet());
+api.use(helmet());
 api.use(bodyParser.json({ type: 'application/json' }));
 api.use(bodyParser.urlencoded({ extended: true }));
 
 api.use(requestLogger);
 
-api.use('/dist', Express.static(path.dirname(process.argv[1])));
+api.use('/dist', express.static(path.dirname(process.argv[1])));
 
 const renderFullPage = (html, preloadedState) => `
     <!doctype html>
