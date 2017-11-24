@@ -3,5 +3,3 @@ TODO
  - [ ] refactor server-side so it doesn't need babel anymore
  - [ ] build demo app with enzyme tests
  - [ ] introduce react-router
- - [ ] introduce redux-sagas
- - [ ] introduce redux-actions
