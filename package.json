@@ -23,7 +23,6 @@
   "dependencies": {
     "body-parser": "^1.18.2",
     "express": "^4.16.2",
-    "express-react-views": "^0.10.4",
     "express-winston": "^2.4.0",
     "helmet": "^3.9.0",
     "path": "^0.12.7",
